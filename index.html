@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Squify ~ The Next Dimension in Web Applications</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+		<!-- stylesheets -->
+		<link rel="stylesheet" href="style/reset.css">
+		<link rel="stylesheet" href="style/font-awesome.css">
+		<link rel="stylesheet" href="style/appstore.css?ver=0.2">
+		<link rel="stylesheet" href="style/search.css?ver=0.3">
+		<link rel="stylesheet" href="style/charity.css?ver=0.2">
+		<link rel="stylesheet" href="style/ventus.css?ver=0.2">
+		<link rel="stylesheet" href="libs/toastr/toastr.min.css">
+		<link rel="stylesheet" href="libs/video-js/video-js.min.css" >
+		<link rel="stylesheet" href="style/jquery-ui-1.10.3.custom.css">
+
+		<link rel="stylesheet" href="style/animate.css">
+		<link rel="stylesheet" href="style/ladda.min.css">
+		<link rel="stylesheet" href="style/colorbox.css">
+		<link rel="stylesheet" href="style/themes.css">
+		<link rel="stylesheet" href="style/login.css?ver=0.1">
+		<link rel="stylesheet" href="style/videos.css?ver=0.1">
+		<link rel="stylesheet" href="style/header-menu.css?ver=0.1">
+		<link rel="stylesheet" href="style/app.css?ver=0.1">
+
+	</head>
+	<body class="default">
+		<canvas style="display:none" id="canvas" width="285" height="285"></canvas>
+            <canvas style="display:none" id="canvas3" width="570" height="570"></canvas>
+            <canvas id="canvas2" width="570" height="570" style="display: block;">*** THIS BROWSER DOES NOT SUPPORT THE CANVAS ELEMENT ***</canvas>
+		<header>
+		</header>
+		<div>
+			<div class="meny">
+				<div class="menu-container">
+					<div class="header-menu left">
+						<a class="link left" title="About Us">
+	                    	<section class="si-icons si-icons-default">
+	                    		<span class="si-icon si-icon-glass-empty" data-icon-name="glass"></span>
+	                    	</section>
+	                    	<p class="text">About Us</p>
+	                	</a>
+	                	<a href="#" id="headerLoginButton" class="link left" title="Create an Account">
+	                		<section class="si-icons si-icons-default" style="margin-top: -3px;">
+	                    		<span class="si-icon si-icon-lock" data-icon-name="padlock"></span>
+	                    	</section>
+	                    	<p class="text">Signup</p>
+	                	</a>
+	                	<a class="link left" title="Contact Us">
+	                		<section class="si-icons si-icons-default" style="margin-top: -7px;">
+	                    		<span class="si-icon si-icon-mail" data-icon-name="mail"></span>
+	                    	</section>
+	                    	<p class="text" style="margin-top: 0px">Contact Us</p>
+	                	</a>
+					</div>
+	                <div class="logo">
+	                    <img src="images/logo-text_med_white.png"/>
+	                </div>
+	                <div class="header-menu right">
+	                	<a href="index.html#/logout" class="link right" title="Logout">
+	                		<section class="si-icons si-icons-default">
+	                    		<span class="si-icon si-icon-smiley" data-icon-name="smiley"></span>
+	                    	</section>
+	                    	<p class="text">Logout</p>
+	                	</a>
+	                	<a href="#themeSettingDiv" id="themeSetting" class="link right" title="Preferences">
+	                		<section class="si-icons si-icons-default">
+	                    		<span class="si-icon si-icon-equalizer" data-icon-name="equalizer"></span>
+	                    	</section>
+	                    	<p class="text">Preference</p>
+	                	</a>
+	                	<a class="link right" title="Account Information">
+	                    	<section class="si-icons si-icons-default">
+	                    		<span class="si-icon si-icon-hourglass" data-icon-name="hourglass"></span>
+	                    	</section>
+	                    	<p class="text">Account Info</p>
+	                	</a>                	
+	                </div>
+				</div>	        
+	        </div>
+	        <div class="meny-contents">
+	        	<i class = "fa fa-th" id="arrow" style="position: absolute; right: 20px; top: 10px; color: #fff; pointer-events: all; z-index: 1001;"></i>
+				<div id="appContainer" class="app-container"></div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+			<!-- footer cube area -->
+		<div id="dock-pullup-tab" class="undraggable">
+        	<i class="fa fa-angle-double-right"></i>
+        	<div class="pullup-tri">◣</div>
+        	<div class="pullup-tri shadow">◣</div>
+        </div>
+        <div id="cubeContainer"></div>
+
+		<div id="hidden-content" style= "position:absolute; left:-1000000px">
+			<div id="themeSettingDiv" >
+
+			<span style="margin-right: 20px;">Choose a color </span><input type="color" name="favcolor" id="backgroundColorWheel"/><br/><br/>
+			<div id="theme1" style="cursor: pointer; display: inline-block;">Use Default Theme</div><br/><br/>
+			<p>Select Background Image:</p>
+				<input id="inputFileToLoad" type="file" /><br/><br/> 
+			<div id="removeBackground">Remove Background</div>
+			<button id="toggleCloud" style="width: 100px; text-align: center; height: 30px;">Hide Cloud</button>
+			</div>
+		</div>
+
+		<!-- login form area -->
+		<div id="login-container" style="display: none; overflow: hidden;">
+		    <a class="hiddenanchor" id="toregister"></a>
+		    <a class="hiddenanchor" id="tologin"></a>
+		    <div id="login-wrapper">
+
+		        <div id="register" class="animate form">
+		            <form  autocomplete="on"> 
+		                <h1> Sign up </h1> 
+		                <p> 
+		                    <label for="emailsignup" class="youmail" data-icon="e" > Your email</label>
+		                    <input id="emailsignup" name="emailsignup" required="required" type="email" placeholder="mysupermail@mail.com"/> 
+		                </p>
+		                <p> 
+		                    <label for="passwordsignup" class="youpasswd" data-icon="p">Your password </label>
+		                    <input id="passwordsignup" name="passwordsignup" required="required" type="password" placeholder="eg. X8df!90EO"/>
+		                </p>
+		                <p> 
+		                    <label for="passwordsignup_confirm" class="youpasswd" data-icon="p">Please confirm your password </label>
+		                    <input id="passwordsignup_confirm" name="passwordsignup_confirm" required="required" type="password" placeholder="eg. X8df!90EO"/>
+		                </p>
+		               <button class="ladda-button" id="signupButton" data-color="green" data-style="expand-right" data-size="s" >Signup</button>
+		                <p class="change_link">  
+							Already a member ?
+							<a href="#tologin" class="to_register"> Go and log in </a>
+						</p>
+		            </form>
+		        </div>
+		        <div id="login" class="animate form">
+		            <form autocomplete="on"> 
+		                <h1>Log in</h1> 
+		                <p> 
+		                    <label for="username" class="uname" data-icon="u" required="required"> Your email </label>
+		                    <input id="username" name="username" required="required" type="text" placeholder="mymail@yourdomain.com"/>
+		                </p>
+		                <p> 
+		                    <label for="password" class="youpasswd" data-icon="p"> Your password </label>
+		                    <input id="password" name="password" required="required" type="password" placeholder="eg. X8df!90EO" /> 
+		                </p>
+		                <p class="keeplogin"> 
+							<input type="checkbox" name="loginkeeping" id="loginkeeping" value="loginkeeping" /> 
+							<label for="loginkeeping">Keep me logged in</label>
+						</p>
+						<button class="ladda-button" id="loginButton" data-color="green" data-style="expand-right" data-size="s" style="float: right;">Login</button>
+		                <div style="display: block; border-top: 1px solid #cecece; margin-top: 60px; padding: 10px;">
+		                    <button class="ladda-button" id="facebookLoginButton" data-color="green" data-style="expand-right" data-size="s" style="margin-left: 110px;">Login with Facebook</button>
+		                </div>
+		                <p class="change_link">
+							Not a member yet ?
+							<a href="#toregister" class="to_register">Join us</a>
+						</p>
+		            </form>
+		        </div>
+		    </div>
+		</div>
+
+		<!-- javascript libraries -->
+		<script type="text/javascript" src="libs/jQuery/jquery-1.10.2.js"></script>
+		<script type="text/javascript" src="libs/jQuery/jquery-migrate-1.2.1.js"></script>
+		<script type="text/javascript" src="libs/jQuery/jquery-ui-1.10.3.custom.js"></script> 
+		<script type="text/javascript" src="libs/jQuery/jquery-ui.js"></script>
+		<script type="text/javascript" src="libs/jQuery/jquery.dotdotdot.min.js"></script>
+		<script type="text/javascript" src="libs/jQuery/jquery.colorbox-min.js"></script>
+		<script type="text/javascript" src="libs/jQuery/jquery-handlebars-1.1.4.min.js"></script>
+		<script type="text/javascript" src="libs/jQuery/imagesloaded.pkgd.min.js"></script>
+		<script type="text/javascript" src="libs/bootstrap/bootstrap.js"></script>
+		<script type="text/javascript" src="libs/router/director.min.js"></script>
+		<script type="text/javascript" src="libs/eventEmitter/EventEmitter.js"></script>
+		<script type="text/javascript" src="libs/handlebars/handlebars.js"></script>
+		<script type="text/javascript" src="libs/jStorage/jStorage.js"></script>
+		<script type="text/javascript" src="libs/threejs/three.min.js"></script>
+		<script type="text/javascript" src="libs/threejs/tween.min.js"></script>
+		<script type="text/javascript" src="libs/threejs/stats.min.js"></script>
+		<script type="text/javascript" src="libs/threejs/CSS3DRenderer.js"></script>
+		<script type="text/javascript" src="libs/threejs/HelixControls.js"></script>
+		<script type="text/javascript" src="libs/threejs/HelixSpiralControls.js"></script>
+		<script type="text/javascript" src="libs/threejs/SearchControls.js"></script>
+    <script type="text/javascript" src="libs/threejs/TrackballControls.js"></script>
+		<script type="text/javascript" src="libs/GreenSock/Draggable.min.js"></script>
+		<script type="text/javascript" src="libs/GreenSock/ThrowPropsPlugin.min.js"></script>
+		<script type="text/javascript" src="libs/GreenSock/CustomEase.js"></script>
+		<script type="text/javascript" src="libs/GreenSock/TweenMax.min.js"></script>		
+		<script type="text/javascript" src="libs/video-js/video.js"></script>
+		<script type="text/javascript" src="libs/video-js/vjs.youtube.js"></script>
+		<script type="text/javascript" src="libs/toastr/toastr.min.js"></script>
+		<script type="text/javascript" src="libs/meny.min.js"></script>
+		<script type="text/javascript" src="libs/animate.js"></script>
+		<script type="text/javascript" src="libs/spin.min.js"></script>
+		<script type="text/javascript" src="libs/ladda.min.js"></script>
+
+        <!-- javascript configuration files -->
+        <script type="text/javascript" src="config/appConf.js"></script>
+        <script type="text/javascript" src="config/namespace.js"></script>
+        <script type="text/javascript" src="config/locale.js"></script>
+
+		<!-- utility functions -->
+		<script type="text/javascript" src="utils/sessionStorage.js"></script>
+		<script type="text/javascript" src="utils/utils.js"></script>
+		<script type="text/javascript" src="utils/templateLoader.js"></script>
+		<script type="text/javascript" src="utils/renderManager.js"></script>
+		<script type="text/javascript" src="utils/displayManager.js"></script>
+		<script type="text/javascript" src="utils/device.js"></script>
+		<script type="text/javascript" src="utils/jquery.iframetracker.js"></script>
+
+        <!-- router -->
+        <script type="text/javascript" src="router/router.js"></script>
+
+        <!-- svg -->
+        <script type="text/javascript" src="svg/snap.svg-min.js"></script>
+        <script type="text/javascript" src="svg/svgicons-config.js"></script>
+        <script type="text/javascript" src="svg/svgicons.js"></script>
+
+		<!-- modules -->
+		<script type="text/javascript" src="modules/search/search-comp.js"></script>
+		<script type="text/javascript" src="modules/search/searchRoute.js"></script>
+		<script type="text/javascript" src="modules/appStore/appStore-comp.js"></script>
+		<script type="text/javascript" src="modules/appStore/appStoreRoute.js"></script>
+		<script type="text/javascript" src="modules/charityPicker/charityPicker-comp.js"></script>
+		<script type="text/javascript" src="modules/charityPicker/charityPickerRoute.js"></script>
+		<script type="text/javascript" src="modules/footerCubes/footerCubes-comp.js"></script>
+		<script type="text/javascript" src="modules/login/login.js"></script>
+		<script type="text/javascript" src="modules/logout/logout.js"></script>
+		<script type="text/javascript" src="modules/signup/signup.js"></script>
+		<script type="text/javascript" src="modules/videos/videos.js"></script>
+        <script type="text/javascript" src="modules/videos/videosRoute.js"></script>
+		<script type="text/javascript" src="app.js"></script>
+	</body>
+</html>

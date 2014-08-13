@@ -1,0 +1,25 @@
+<div class="carousel-item">
+	<div class="screenshot">
+		<!-- <div class="shine-pane blur"></div> -->
+		{{#if isYoutube}}
+			<div class="youtube-button"><i class="fa fa-youtube-play"></i><div class="youtube-underlay"></div><i class="fa fa-youtube-play shadow"></i></div>
+		{{else}}
+			<i class="fa fa-spinner fa-spin loadingSpinner "></i>
+		{{/if}}
+		<!-- <img class="search-pane-img" src="{{imageUrl}}" alt="{{title}}"> -->
+	</div>
+	<div class="item-heading">
+		<div class="pagenumber">
+			{{#if isAd}}
+		    	<i class="fa fa-usd"></i>
+		  	{{else}}
+		    	{{searchNum}}
+		  	{{/if}}</div>
+		<div class="title ellipsis">{{{title}}}</div>
+	</div>
+
+	<div class="item-details">
+		<p class="link ellipsis">{{domain}}</p>
+		<div class="description"><p> {{{description}}}</p></div>
+	</div>
+</div>

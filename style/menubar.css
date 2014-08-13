@@ -1,0 +1,202 @@
+
+.ui .navtechandall .link {
+	color:#FFF; text-decoration:none;
+}
+
+.ui .navtechandall .icon {
+	color:#4d4d4d; text-decoration:none;
+}
+
+.ui.navtechandall {
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+  min-height: 1em;
+  outline: none;
+  border: none;
+  background-color: #d6d6d6;
+  color: #808080;
+  margin: 0em;
+  padding: 0.8em 1.5em;
+  font-size: 1rem;
+  line-height: 1;
+  font-style: normal;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 0.25em;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*******************************
+            States
+*******************************/
+
+/*--------------
+     Active
+---------------*/
+
+.ui.navtechandalls .active.navtechandall,
+.ui.active.navtechandall {
+  background-color: #EAEAEA;
+  background-image: none;
+  -webkit-box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.05) inset !important;
+  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.05) inset !important;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+/*--------------
+      Hover
+---------------*/
+
+.ui.navtechandall:not(.loading):hover {
+  background-image: -webkit-gradient(linear, top left, bottom left, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.08)));
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.08));
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.08));
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.ui.navtechandall.active:hover {
+  background-image: none;
+}
+
+.ui.navtechandall:hover .icon,
+.ui.navtechandall.hover .icon {
+  opacity: 0.85;
+}
+
+/*--------------
+      Down
+---------------*/
+
+.ui.navtechandall:not(.loading):active,
+.ui.active.navtechandall:not(.loading):active {
+  background-color: #F1F1F1;
+  color: rgba(0, 0, 0, 0.7);
+  -webkit-box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.05) inset !important;
+  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.05) inset !important;
+}
+
+
+
+
+
+/*-------------------
+      Or navtechandalls
+--------------------*/
+
+.ui.navtechandalls .or {
+  position: relative;
+  float: left;
+  width: 0.3em;
+  height: 1.1em;
+  z-index: 3;
+}
+
+.ui.navtechandalls .or:before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  content: '\00bb';
+  background-color: #000000;
+  margin-top: -0.1em;
+  margin-left: -0.9em;
+  width: 1.8em;
+  height: 1.8em;
+  line-height: 1.55;
+  color: #fff;
+  font-style: normal;
+  font-weight: normal;
+  text-align: center;
+  border-radius: 500px;
+  -webkit-box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.ui.navtechandalls .or:after {
+  position: absolute;
+  top: 0em;
+  left: 0em;
+  content: ' ';
+  width: 0.3em;
+  height: 1.7em;
+  background-color: transparent;
+  border-top: 0.5em solid #000000;
+  border-bottom: 0.5em solid #000000;
+}
+
+
+
+
+/*---------------
+    Positive
+----------------*/
+
+.ui.positive.navtechandalls .navtechandall,
+.ui.positive.navtechandall {
+  background-color: #4d4d4d !important;
+  color: #FFFFFF;
+}
+
+.ui.positive.navtechandalls .navtechandall:hover,
+.ui.positive.navtechandall:hover,
+.ui.positive.navtechandalls .active.navtechandall,
+.ui.positive.navtechandall.active {
+  background-color: #343434 !important;
+  color: #FFFFFF;
+}
+
+.ui.positive.navtechandalls .navtechandall:active,
+.ui.positive.navtechandall:active {
+  background-color: #4CB164 !important;
+  color: #FFFFFF;
+}
+
+
+/*******************************
+            Groups
+*******************************/
+
+.ui.navtechandalls {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.ui.navtechandalls:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.ui.navtechandalls .navtechandall:first-child {
+  border-left: none;
+}
+
+.ui.navtechandalls .navtechandall {
+  float: left;
+  border-radius: 0em;
+}
+
+.ui.navtechandalls .navtechandall:first-child {
+  margin-left: 0em;
+  border-top-left-radius: 0.25em;
+  border-bottom-left-radius: 0.25em;
+}
+
+.ui.navtechandalls .navtechandall:last-child {
+  border-top-right-radius: 0.25em;
+  border-bottom-right-radius: 0.25em;
+}
+

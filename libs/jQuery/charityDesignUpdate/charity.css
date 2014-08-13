@@ -1,0 +1,353 @@
+.gradient-background {
+	background: #75b719;
+	background: -moz-linear-gradient(top, #75b719 0, #668b40 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #75b719), color-stop(100%, #668b40));
+	background: -webkit-linear-gradient(top, #75b719 0, #668b40 100%);
+	background: -o-linear-gradient(top, #75b719 0, #668b40 100%);
+	background: -ms-linear-gradient(top, #75b719 0, #668b40 100%);
+	background: linear-gradient(to bottom, #75b719 0, #668b40 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#75b719', endColorstr='#668b40', GradientType=0)
+}
+.charity-buttons {
+	padding: 2px 2px 2px 5px;
+	width: 70px;
+	font-size: 9px;
+	background: #deeecd;
+	color: #537929;
+	text-align: left;
+	border-radius: 5px 5px 5px 5px;
+	-moz-border-radius: 5px 5px 5px 5px;
+	-webkit-border-radius: 5px 5px 5px 5px;
+	margin-left: auto;
+	margin-right: auto
+}
+.charity-preview {
+	width: 384px;
+	height: 256px;
+	background: #fff;
+	z-index: 1e +25;
+	border-bottom-left-radius: 31px;
+	border-bottom-right-radius: 4px;
+	-webkit-border-bottom-left-radius: 31px;
+	-webkit-border-bottom-right-radius: 4px;
+	-moz-border-bottom-left-radius: 31px;
+	-moz-border-bottom-right-radius: 4px;
+	-o-border-bottom-left-radius: 31px;
+	-o-border-bottom-right-radius: 4px;
+	-ms-border-bottom-left-radius: 31px;
+	-ms-border-bottom-right-radius: 4px;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 30px;
+	-webkit-border-top-left-radius: 3px;
+	-webkit-border-top-right-radius: 30px;
+	-moz-border-top-left-radius: 3px;
+	-moz-border-top-right-radius: 30px;
+	-o-border-top-left-radius: 3px;
+	-o-border-top-right-radius: 30px;
+	-ms-border-top-left-radius: 3px;
+	-ms-border-top-right-radius: 30px;
+}
+.charity-preview .charity-logo {
+	height: 100%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top:-2px;
+	border: 3px double #4ac60c;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 40px;
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-top-right-radius: 40px;
+	-moz-border-top-left-radius: 5px;
+	-moz-border-top-right-radius: 40px;
+	-o-border-top-left-radius: 5px;
+	-o-border-top-right-radius: 40px;
+	-ms-border-top-left-radius: 5px;
+	-ms-border-top-right-radius: 40px;
+	border-bottom-left-radius: 40px;
+	border-bottom-right-radius: 5px;
+	-webkit-border-bottom-left-radius: 40px;
+	-webkit-border-bottom-right-radius: 5px;
+	-moz-border-bottom-left-radius: 40px;
+	-moz-border-bottom-right-radius: 5px;
+	-o-border-bottom-left-radius: 40px;
+	-o-border-bottom-right-radius: 5px;
+	-ms-border-bottom-left-radius: 40px;
+	-ms-border-bottom-right-radius: 5px;
+}
+.charity-preview .item-heading {
+	background: #3a821f;
+	background: -moz-linear-gradient(top, #3a821f 0, #4ac60c 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #4ac60c), color-stop(100%, #4ac60c));
+	background: -webkit-linear-gradient(bottom, #3a821f 0, #4ac60c 100%);
+	background: -o-linear-gradient(top, #3a821f 0, #4ac60c 100%);
+	background: -ms-linear-gradient(top, #3a821f 0, #4ac60c 100%);
+	background: linear-gradient(to top, #3a821f 0, #4ac60c 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3a821f', endColorstr='#4ac60c', GradientType=0);
+	color: #fff;
+	height: 43px;
+	width: 100%;
+	text-align: center;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	border-bottom-left-radius: 30px;
+	border-bottom-right-radius: 3px;
+	-webkit-border-bottom-left-radius: 30px;
+	-webkit-border-bottom-right-radius: 3px;
+	-moz-border-bottom-left-radius: 30px;
+	-moz-border-bottom-right-radius: 3px;
+	-o-border-bottom-left-radius: 30px;
+	-o-border-bottom-right-radius: 3px;
+	-ms-border-bottom-left-radius: 30px;
+	-ms-border-bottom-right-radius: 3px;
+}
+.charity-preview .logo-container {
+	padding: 20px;
+	height: 173px;
+	width: 344px;
+	position: absolute;
+	top: 0;
+	left: 0
+}
+.charity-details {
+	width: 384px;
+	height: 245px;
+	background: #fff;
+	border-top:1px solid #4ac60c;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 31px;
+	-webkit-border-top-left-radius: 4px;
+	-webkit-border-top-right-radius: 31px;
+	-moz-border-top-left-radius: 4px;
+	-moz-border-top-right-radius: 31px;
+	-o-border-top-left-radius: 4px;
+	-o-border-top-right-radius: 31px;
+	-ms-border-top-left-radius: 4px;
+	-ms-border-top-right-radius: 31px;
+	
+}
+.charity-details .item-heading {
+	background: #3a821f;
+	background: -moz-linear-gradient(top, #3a821f 0, #4ac60c 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #3a821f), color-stop(100%, #4ac60c));
+	background: -webkit-linear-gradient(bottom, #3a821f 0, #4ac60c 100%);
+	background: -o-linear-gradient(top, #3a821f 0, #4ac60c 100%);
+	background: -ms-linear-gradient(top, #3a821f 0, #4ac60c 100%);
+	background: linear-gradient(to top, #3a821f 0, #4ac60c 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3a821f', endColorstr='#4ac60c', GradientType=0);
+	width: 100%;
+	height: 35px;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 30px;
+	-webkit-border-top-left-radius: 3px;
+	-webkit-border-top-right-radius: 30px;
+	-moz-border-top-left-radius: 3px;
+	-moz-border-top-right-radius: 30px;
+	-o-border-top-left-radius: 3px;
+	-o-border-top-right-radius: 30px;
+	-ms-border-top-left-radius: 3px;
+	-ms-border-top-right-radius: 30px;
+}
+.charity-details .item-heading .title {
+	height: 35px;
+	position:relative;
+	margin-left:0px;
+	color: #fff;
+	width: 100%;
+	text-align: center;
+	font-size: 17px;
+	line-height: 35px;
+	vertical-align: middle;
+	font-family: Nexa;
+}
+.charity-details .content {
+	display: block;
+	padding: 20px;
+	overflow: hidden;
+	margin: 0;
+	width: 344px;
+	height: 170px
+}
+.charity-details .content .charity-corner {
+	display: inline;
+	float: left;
+	width: 25%;
+	padding-right: 10px;
+}
+.charity-details .content .charity-corner .website {
+	color: #537929;
+	width: 100%;
+	text-align: center;
+	font-size: 9px;
+	margin-bottom: 2px;
+	margin-top: 4px;
+	display: block;
+	text-decoration: none
+}
+.charity-details .content .charity-corner .charity-logo {
+	width: 120%;
+	display: block;
+	margin-left:0px;
+	margin-top:7px;
+	border: 1px double #3a821f;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 25px;
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-top-right-radius: 25px;
+	-moz-border-top-left-radius: 5px;
+	-moz-border-top-right-radius: 25px;
+	-o-border-top-left-radius: 5px;
+	-o-border-top-right-radius: 25px;
+	-ms-border-top-left-radius: 5px;
+	-ms-border-top-right-radius: 25px;
+	border-bottom-left-radius: 25px;
+	border-bottom-right-radius: 5px;
+	-webkit-border-bottom-left-radius: 25px;
+	-webkit-border-bottom-right-radius: 5px;
+	-moz-border-bottom-left-radius: 25px;
+	-moz-border-bottom-right-radius: 5px;
+	-o-border-bottom-left-radius: 25px;
+	-o-border-bottom-right-radius: 5px;
+	-ms-border-bottom-left-radius: 25px;
+	-ms-border-bottom-right-radius: 5px;
+}
+.charity-details .content .charity-corner .add-charity {
+	padding: 2px 2px 2px 5px;
+	width: 104px;
+	height:15px;
+	font-size: 10px;
+	font-family:Nexa;
+	font-weight:bold;
+	margin-top:12px;
+	outline-style
+	cursor:pointer;
+	text-align: center;
+	padding-left:0;
+	padding-right:0;
+	padding-top: 5px;
+	border-radius: 5px 5px 5px 5px;
+	-moz-border-radius: 5px 5px 5px 5px;
+	-webkit-border-radius: 5px 5px 5px 5px;
+	margin-left: 1px;
+	color: #3a821f;
+	background:#ffffff;
+	border:1px solid #3a821f;
+	transform: scale(1,1);
+	transition-timing-function: ease-out;
+	transition-duration: 250ms;
+	-webkit-transform: scale(1,1);
+    -webkit-transition-timing-function: ease-out;
+    -webkit-transition-duration: 250ms;
+    -moz-transform: scale(1,1);
+    -moz-transition-timing-function: ease-out;
+    -moz-transition-duration: 250ms;
+}
+.charity-details .content .charity-corner .add-charity:hover{
+	transform: scale(1.05,1.07);
+	transition-timing-function: ease-out;
+	transition-duration: 250ms;
+	-webkit-transform: scale(1.05,1.07);
+    -webkit-transition-timing-function: ease-out;
+    -webkit-transition-duration: 250ms;
+    -moz-transform: scale(1.05,1.07);
+    -moz-transition-timing-function: ease-out;
+    -moz-transition-duration: 250ms;
+    color: #ffffff;
+	background:#3a821f;
+	border:1px solid #3a821f;
+	cursor:pointer;
+}
+.charity-details .content .charity-corner .website {
+	padding: 2px 2px 2px 5px;
+	font-size: 10px;
+	font-family:Nexa;
+	font-weight:bold;
+	margin-top:26px;
+	width: 104px;
+	height:15px;
+	color: #3a821f;
+	background:#ffffff;
+	border:1px solid #3a821f;
+	text-align: center;
+	padding-left:0;
+	padding-right:0;
+	padding-top: 5px;
+	border-radius: 5px 5px 5px 5px;
+	-moz-border-radius: 5px 5px 5px 5px;
+	-webkit-border-radius: 5px 5px 5px 5px;
+	margin-left: 1px;
+	transform: scale(1,1);
+	transition-timing-function: ease-out;
+	transition-duration: 250ms;
+	-webkit-transform: scale(1,1);
+    -webkit-transition-timing-function: ease-out;
+    -webkit-transition-duration: 250ms;
+    -moz-transform: scale(1,1);
+    -moz-transition-timing-function: ease-out;
+    -moz-transition-duration: 250ms;
+}
+.charity-details .content .charity-corner .website:hover{
+	transform: scale(1.05,1.07);
+	transition-timing-function: ease-out;
+	transition-duration: 250ms;
+	-webkit-transform: scale(1.05,1.07);
+    -webkit-transition-timing-function: ease-out;
+    -webkit-transition-duration: 250ms;
+    -moz-transform: scale(1.05,1.07);
+    -moz-transition-timing-function: ease-out;
+    -moz-transition-duration: 250ms;
+    color: #ffffff;
+	background:#3a821f;
+	border:1px solid #3a821f;
+}
+.charity-details .content .description {
+	display: block;
+	width: 64%;
+	float: right;
+	font-size: 13px;
+	overflow: hidden;
+	color: #555;
+	font-family: Arial;
+	line-height: 1.5;
+	margin-top:3px;
+}
+.charity-details .registration {
+	width: 100%;
+	text-align: center;
+	border-top: 1px solid #4ac60c;
+	border-bottom: 1px solid #3a821f;
+	font-size: 9px;
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 16px;
+	color: #fefeff;
+	border-bottom-left-radius: 35px;
+	border-bottom-right-radius: 5px;
+	-webkit-border-bottom-left-radius: 35px;
+	-webkit-border-bottom-right-radius: 5px;
+	-moz-border-bottom-left-radius: 35px;
+	-moz-border-bottom-right-radius: 5px;
+	-o-border-bottom-left-radius: 35px;
+	-o-border-bottom-right-radius: 5px;
+	-ms-border-bottom-left-radius: 35px;
+	-ms-border-bottom-right-radius: 5px;
+	background: #3a821f;
+	background: -moz-linear-gradient(top, #3a821f 0, #4ac60c 100%);
+	background: -webkit-linear-gradient(bottom, #3a821f 0, #4ac60c 100%);
+	background: -o-linear-gradient(top, #3a821f 0, #4ac60c 100%);
+	background: -ms-linear-gradient(top, #3a821f 0, #4ac60c 100%);
+	background: linear-gradient(to top, #3a821f 0, #4ac60c 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3a821f', endColorstr='#4ac60c', GradientType=0);
+}
+@font-face {
+	font-family: Nexa;
+	src: url('Nexa.otf');
+}
+@font-face{
+	font-family: Venera;
+	src: url('Venera.otf');
+}
+@font-face{
+	font-family: Neou;
+	src: url('Neou.ttf');
+}

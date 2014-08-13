@@ -1,0 +1,43 @@
+/* default */
+
+/*html{
+ /*background: url(/images/squify_back.png) no-repeat center center fixed;*
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+ background: #A6C9DD;
+}*/
+ 
+body{
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.default {
+	background-color: #002245;
+	font-family: Arial;
+	color: #000;
+}
+
+.olive {
+	background-color: #3D9970;
+	font-family: verdana;
+	color: #34495e;
+}
+
+.grey {
+	background-color: #AAAAAA;
+	font-family: verdana;
+	color: #34495e;
+}
+
+#canvas2{
+	position: fixed;
+	width: 100%;
+	height: auto;
+	z-index: -1;
+    pointer-events: none;
+}

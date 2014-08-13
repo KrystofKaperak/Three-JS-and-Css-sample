@@ -1,0 +1,251 @@
+.topBar{
+    color: #FFFFFF;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 1000;
+}
+
+.topBar a, .topBar p {
+    color: #000;
+}
+
+/*
+FROM views/layout.html
+*/ 
+#info {
+    position: absolute;
+    width: 100%;
+    color: #ffffff;
+    padding: 5px;
+    font-family: Monospace;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+    z-index: 1;
+}
+#menu {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+/*button, .button {
+    color: rgba(127,160,255,0.75);
+    background: transparent;
+    outline: 1px solid rgba(127,160,255,0.75);
+    border: 0px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+button:hover, .button:hover {
+    background-color:rgba(0,132,255,0.5);
+}
+button:active, .button:active {
+    color: #000000;
+    background-color: rgba(0,132,255,0.75);
+}*/
+
+
+@font-face
+{
+    font-family: Roboto;
+    src: url(/style/fonts/Roboto-Medium.ttf);
+}
+
+@font-face
+{
+    font-family: Roboto;
+    src: url(/style/fonts/Roboto-Medium.ttf);
+    font-weight: normal;
+}
+
+@font-face
+{
+    font-family: Roboto;
+    src: url(/style/fonts/Roboto-Bold.ttf);
+    font-weight: bold;
+}
+
+
+@font-face
+{
+    font-family: Roboto;
+    src: url(/style/fonts/Roboto-Thin.ttf);
+    font-weight: thin;
+}
+
+
+/*For helix view*/ 
+.appCard {
+    font-family: 'Roboto', sans-serif;
+    width: 480px;
+    height: 280px;
+    box-shadow: 0px 0px 12px rgba(0,132,255,0.5);
+    border: 1px solid rgba(127,160,255,0.25);
+    text-align: center;
+    border-radius: 6px;
+    background: rgba(0,64,128,0.8);
+    text-decoration: none !important;
+
+}
+
+.appDetailsCard {
+    width:720px;
+    height:420px;
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left:20px;
+    padding-right:20px;
+    background: rgba(0,64,128,1);
+    font-family: 'Roboto', sans-serif;
+    color:#fff;
+    border-radius: 6px;
+    overflow: hidden;
+    text-decoration: none !important;
+    box-shadow: 0px 0px 12px rgba(0,132,255,0.5);
+    border: 1px solid rgba(127,160,255,0.25);
+    
+
+}
+
+.appDetailsCard .title {
+    /*font-weight: 400; */
+    color: #FFF;
+    width:100%;
+    overflow: hidden ;
+    text-align: center;
+    font-weight: bold;
+    font-size:36px;
+    margin:0px ;
+
+    /*text-shadow: 2px 2px 4px #000000;*/
+
+}
+
+.appDetailsCard .appPreviewContainer {
+    width:30%;
+    height: 80%;
+    float:left;
+    position:relative;
+}
+
+.appDetailsCard .appPreview{
+    display:block;
+    width:80%;
+    padding-left:10%;
+    padding-right:10%;
+    padding-bottom:10%;
+    padding-top:0%;
+}
+
+.appDetailsCard .addDiv {
+    position: absolute;
+    bottom:0;
+    width:100%;
+    
+}
+.appDetailsCard .addDiv .button {
+    width:110px;
+    margin:0 auto 0 auto;
+     text-align: center;
+}
+
+.appDetailsCard .description{
+    font-weight: normal;
+    height:60%;
+    font-size: 18px;
+    overflow: hidden;
+}
+
+
+
+.appCard:hover {
+    box-shadow: 0px 0px 12px rgba(0,132,255,0.75);
+    background: rgba(0, 100, 200 ,0.9);
+    border: 2px solid rgba(127,160,255,0.75);
+}
+
+.appCard .title {
+    /*font-weight: 400; */
+    color: #FFF;
+    width:90%;
+    overflow: hidden ;
+    text-align: center;
+    font-weight: bold;
+    font-size:48px;
+    margin: 5px 15px 5px 15px ;
+    /*text-shadow: 2px 2px 4px #000000;*/
+
+}
+
+.appCard .description {
+    width:55%;
+    margin:10px;
+    clear:right;
+    float:right;
+    text-align: left;
+    font-size: 24px;
+    margin:20px;
+    font-weight: bold;
+    color: #FFF;
+}
+
+/*container for text portion of appCard*/
+.appCard .appText {
+    text-decoration: none;
+   
+}
+
+
+.appCard .appIconImg{
+    position:absolute;
+    top:70px;
+    width:180px;
+    height:180px;
+    margin:5px;
+}
+
+.appCard .appIcon {
+    float:left;
+
+    font-size: 60px;
+    font-weight: bold;
+    color: rgba(255,255,255,0.75);
+   
+}
+
+/*upper left-hand icon*/
+.appCard .addButton{
+    height:64px;
+    width:64px;
+    
+}
+
+/*DEPRICATED, was used to make installed icon red, now use different addButton icon*/
+.appCard .iconSubscribed {
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    font-size: 60px;
+    font-weight: bold;
+    color: rgba(255,100,100,0.75);
+    background-color: red;
+}
+
+
+
+.appCard .getButton {
+    margin:5px;
+}
+
+#eventCatcher{
+    height:100%;
+    width:100%;
+    z-index: 10;
+    display:inline;
+    position:absolute;
+
+}
+

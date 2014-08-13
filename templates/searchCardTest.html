@@ -1,0 +1,21 @@
+<div class="carousel-item no-backface">
+	<div class="screenshot ">
+		<!-- <div class="shine-pane blur"></div> -->
+		<div class="youtube-button"><i class="fa fa-youtube-play"></i><i class="fa fa-youtube-play shadow"></i><div class="youtube-underlay"></div></div>
+		<img class="search-pane-img" src="{{imageUrl}}" alt="{{title}}">
+	</div>
+	<div class="item-heading ">
+		<div class="pagenumber">
+			{{#if isAd}}
+		    	<img src="/images/search/sponsored.png" alt="Sponsored">
+		  	{{else}}
+		    	{{searchNum}}
+		  	{{/if}}</div>
+		<div class="title ellipsis">{{title}}</div>
+	</div>
+
+	<div class="item-details">
+		<p class="link ellipsis">{{domain}}</p>
+		<div class="description"><p> {{{description}}}</p></div>
+	</div>
+</div>
